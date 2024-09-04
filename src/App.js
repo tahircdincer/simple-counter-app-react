@@ -11,11 +11,14 @@ export default function App() {
   return (
     <div className="container">
       <div className="counter__value">
-        {count}
-        <button className="counter__increment--value" onClick={increment}>
+        <div className="count">
+          <p>{count} </p>
+        </div>
+        >
+        <button className="btn counter__increment--value" onClick={increment}>
           +
         </button>
-        <button className="counter__minus--value" onClick={minus}>
+        <button className="btn counter__minus--value" onClick={minus}>
           -
         </button>
       </div>
